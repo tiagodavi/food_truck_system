@@ -36,6 +36,10 @@ Something like that: https://qdrant.tech/articles/food-discovery-demo
 - I could create a REST or GraphQL API and use it instead of the web page directly, this
 way I could use the same api for a future mobile app. 
 
+## Video with the app working
+
+ https://www.loom.com/share/bd787c5fe4e04e1da55020a00bd1d79e?sid=c6519d6d-bcd6-4d95-aae7-1deb1fd33707
+
 
 
 
