@@ -1,0 +1,41 @@
+<div class="container mx-auto">
+  <div class="mb-4">
+    <.form for={@form} phx-change="search">
+      <.input
+        type="text"
+        field={@form[:search]}
+        placeholder="Search for restaurants by name, location, type of food..."
+        class="w-full p-2 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-red-500"
+      />
+    </.form>
+  </div>
+  <div
+    class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+    id="restaurants"
+    phx-update="stream"
+  >
+    <div id="restaurants-empty" class="only:block hidden">
+      <p class="text-sm font-bold mb-0.5">No restaurants found.</p>
+    </div>
+
+    <div
+      :for={{id, restaurant} <- @streams.restaurants}
+      id={id}
+      class="bg-white p-4 rounded shadow-sm border border-gray-200"
+    >
+      <div>
+        <h2 class="text-lg font-bold mb-0.5"><%= restaurant.name %></h2>
+        <p class="text-gray-600 text-sm mb-0.5"><%= restaurant.food %></p>
+
+        <hr class="h-px my-2.5 bg-gray-200 border-0 dark:bg-gray-700" />
+
+        <p class="text-gray-500 text-sm mb-0.5"><%= restaurant.location %></p>
+        <p class="text-gray-500 text-sm mb-0.5"><%= restaurant.address %></p>
+
+        <hr class="h-px my-2.5 bg-gray-200 border-0 dark:bg-gray-700" />
+
+        <p class="text-gray-500 text-sm mb-0.5"><%= restaurant.availability %></p>
+      </div>
+    </div>
+  </div>
+</div>
