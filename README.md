@@ -38,9 +38,6 @@ way I could use the same api for a future mobile app.
 
 ## Loom Video
 
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/bd787c5fe4e04e1da55020a00bd1d79e?sid=ca1cc544-1a29-4b24-ae92-0345eb19b170" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-
  https://www.loom.com/share/bd787c5fe4e04e1da55020a00bd1d79e?sid=c6519d6d-bcd6-4d95-aae7-1deb1fd33707
 
 
