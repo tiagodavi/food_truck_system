@@ -27,7 +27,7 @@ Something like that: https://qdrant.tech/articles/food-discovery-demo
 
 - I would remove the sample pages that comes with phoenix by default. 
 
-- I would add more tests for more scenarios.
+- I would add more tests for more scenarios, empty list, weird params and successful cases.
 
 - I would add a map on the page so the user could easily find near restaurants by enabling their location or calculate the distance from a point to the desire restaurant.  
 
